@@ -1,0 +1,25 @@
+body {
+    
+}
+.header {
+    height: 4em;
+    background-color: lightgrey;
+}
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto; /** toto dá stránku na střed **/
+    margin-right: auto;
+    width: 1000px; /** todle musí být zadáno jinak to nemá vůči čemu se vystředit, dává se 1000 protože to je akorát **/
+    padding: 10px; /** all sides **/
+    padding: 10px 20px; /** 10 top a bottom, 20 left + right **/
+}
+.content p {
+    border-left: 2px solid teal;
+    padding-left: 1em;
+
+}
+.content p:first-letter {
+    font-size: 3em;
+    float: left; /* text obteče první písmeno */
+    line-height: 1em; /* to make the line exactly 3em height, connected with font size 3+1 = 4 fontsize */
+}

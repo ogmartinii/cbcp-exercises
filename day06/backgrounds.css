@@ -1,0 +1,23 @@
+.outer {
+    margin: 1em;
+    padding: 3em;
+    border: 1px solid black;
+    background: linear-gradient(-90deg, yellow, red);
+    position: relative;
+}
+.inner {
+    border: 1px solid red;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 1;
+}
+.green {
+    position: absolute; /* absolute to the first parent that is relative or absolute, if not, body applies// hledá vůči čemu bude odměřen, hledá relative */
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%; /* 100 vůči vnějšímu divu tedy .inner */
+    background-color: green;
+    z-index: 0;
+}

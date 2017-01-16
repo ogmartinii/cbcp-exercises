@@ -1,0 +1,44 @@
+.outer {
+    
+    width: 80%;
+    min-height: 80vh;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(244,102,41); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(244,102,41,1) 0%, rgba(234,170,42,1) 45%, rgba(71,174,183,1) 70%, rgba(35,83,138,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(244,102,41,1) 0%,rgba(234,170,42,1) 45%,rgba(71,174,183,1) 70%,rgba(35,83,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(244,102,41,1) 0%,rgba(234,170,42,1) 45%,rgba(71,174,183,1) 70%,rgba(35,83,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f46629', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+    
+}
+.inner {
+    
+    width: 50%;
+    margin: 10%;
+    color: black;
+
+background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.13) 75%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.13) 75%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.13) 75%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+background-image: url("img/freeman-portrait.jpg");
+
+
+}
+.smiley {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    background-image: url("img/smiley.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.nebula {
+    width: 100%;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: transparent url("img/nebula.jpg") left top/cover no-repeat fixed;
+       
+}

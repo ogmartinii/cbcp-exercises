@@ -1,0 +1,7 @@
+.smiling {
+    width: 200px;
+    height: 200px;
+    border: 1px, white solid;
+    background-image: url("img/smiley.png");
+    background-position: center center;
+}
