@@ -1,0 +1,22 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+h1 {
+  color: red;
+}
+p {
+  color: white;
+  font-family: serif;
+  padding: 10px;
+}
+.tip {
+  background-color: cornflowerblue;
+}
+
+/*# sourceMappingURL=index.css.map */
