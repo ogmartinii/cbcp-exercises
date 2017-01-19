@@ -1,0 +1,20 @@
+body {
+    font-size: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+h1 {
+    color: deepskyblue;
+}
+.main {
+    background-color: grey;
+}
+.main h2, 
+.main p {
+    color: skyblue;
+    background-color: cyan;
+}
+p {
+    color: black;
+    background-color: rebeccapurple;
+}

@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.pinkie {
+    background-color: deeppink;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+.greenie {
+    background-color: darkseagreen;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.cabbie {
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    position: absolute0;
+    right: 30px;
+    bottom: 50px;
+}

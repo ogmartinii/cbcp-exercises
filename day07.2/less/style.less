@@ -1,0 +1,21 @@
+@main_color: green;
+@highlight_color: yellow;
+
+h1,
+h2 {
+    color: @main_color;
+}
+section {
+    border-bottom: 1px solid @highlight_color;
+}
+.shadowed {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p {
+    .shadowed;
+}
+section.first {
+        p {
+            background-color:#e0e0e0;
+        }
+    }

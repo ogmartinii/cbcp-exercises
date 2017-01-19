@@ -1,0 +1,27 @@
+body {
+    font-size: 30px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.wrapper {
+    padding: 10px;
+    background-color: lightskyblue;
+    width: 90%;
+}
+.box {
+    padding-left: 10px;
+    margin: 5px;
+    margin-left: 20px;
+    background-color: palevioletred;
+    border: 5px solid black;
+    float: left;
+    width: 40%;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
