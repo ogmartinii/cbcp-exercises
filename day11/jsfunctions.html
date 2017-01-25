@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  
+  <title>Javascript</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    #content {
+      background-color: #c7c7c7;
+      padding: 2em;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+     #mousepos {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border: 1px solid black;
+        padding: 0.25em;
+    }
+    #toggle {
+    display: inline-block;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    /*margin-left: 50em;*/
+    background-color: teal;
+    color: #ffffff;
+    cursor: pointer;
+}
+#toggle.clicked {
+    background-color: violet;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <div id="content">
+
+    <h1 id="heading">A JavaScript playground</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetuer cursus felis tortor mattis id. Enim urna mauris Sed pellentesque justo Suspendisse id Donec lacus elit. Molestie Nam tristique cursus ligula in et consequat Quisque auctor Aenean. Porttitor tincidunt consequat Sed est id sem Pellentesque aliquet nibh sed. Convallis dui risus netus ligula tellus ut justo libero eros convallis. Rutrum sem leo ac Mauris dictum consequat velit In Nulla est. Orci at et quis tortor consequat augue sit faucibus dignissim.</p>
+    <p>Laoreet semper Morbi tincidunt egestas In Sed facilisi libero Integer et. Faucibus wisi Vestibulum Praesent Vivamus id semper ante justo urna pretium. Ligula natoque hendrerit congue mauris amet et Vestibulum risus elit scelerisque. Diam Phasellus sed scelerisque in malesuada arcu neque Aliquam amet arcu. Tempor Aliquam et Nunc dui mauris ac laoreet condimentum tincidunt ut. Sit tellus sagittis dis cursus sollicitudin ornare volutpat augue vestibulum ut. Ligula Maecenas nibh interdum congue Sed quis et orci tristique dolor. Quis sem Nam nunc consequat nibh nisl non Curabitur et consectetuer. Consequat tristique hac.</p>
+
+    <h2 id="yo">
+      yo, wats up!
+    </h2>
+
+    <button id="button">CLICK ME!</button>
+    </div>
+
+    <div id="toggle">Dont klik</div>
+    <div id="mousepos">
+        <div>X: <span id="mousepos_x"></span></div>
+        <div>Y: <span id="mousepos_y"></span></div>
+    </div>
+    
+<script>
+
+$('#button').click(function(event) { //attaches click to the element id button
+    console.log(event); 
+});
+
+$('#button').on("mousemove", function(event) {
+    console.log("X position: "+event.pageX);
+    console.log("Y position: "+event.pageY);
+});
+
+var body = $(document.body);
+body.on('mousemove', function(event) {
+  //do stg.
+  
+  document.getElementById('mousepos_x').innerHTML = event.pageX;
+  document.getElementById('mousepos_y').innerHTML = event.pageY;
+});
+
+function change_heading(new_heading) {
+  document.getElementById('heading').innerHTML= new_heading;
+}  
+
+change_heading('Brace yourself, Functions are comming.');
+
+function change_any_element(id_of_element, text_string) {
+document.getElementById(id_of_element).innerHTML = text_string;
+}
+change_any_element('heading', 'functions are already here!');
+change_any_element('yo', 'i dont even know');
+
+function var_type(value) { //definice funkce, název var_type
+var type = typeof value;
+console.log(value); //vypíše value
+console.log(type); // vypíše typ value
+}
+
+var_type(3.14);
+var_type("My name is Neo!");
+var_type([1, 2, 3, 4]);
+var_type(document);
+
+var plain_button = document.getElementById('button')
+console.log(plain_button);
+
+var toggle = $('#toggle');
+toggle.on('click', function() {
+$(this).addClass('clicked');
+});
+
+
+
+</script>
+  
+</body>
+
+</html>

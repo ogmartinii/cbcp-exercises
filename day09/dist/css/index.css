@@ -4,19 +4,28 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
-  font-family: sans-serif;
+  font-family: Arial;
+  margin: 0;
 }
-h1 {
+#header {
+  background-color: #333333;
+  color: #ffffff;
+  height: 5em;
+}
+#content {
+  background-color: silver;
+  padding: 2em;
+  box-sizing: border-box;
+}
+#content p .best-start,
+#content p .best-end {
+  font-weight: bold;
+}
+#content p .best-start {
+  color: green;
+}
+#content p .best-end {
   color: red;
-}
-p {
-  color: white;
-  font-family: serif;
-  padding: 10px;
-}
-.tip {
-  background-color: cornflowerblue;
 }
 
 /*# sourceMappingURL=index.css.map */

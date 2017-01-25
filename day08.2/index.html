@@ -1,0 +1,30 @@
+<script src="js/script.js" charset="utf-8"></script>
+
+<!--<script>
+    console.log('I wanted to curse in Czech but than I realized someone could check out my files on github. So I changed my mind.')
+    alert('I cusrses in Czech.')
+</script>-->
+
+<style>
+.button {
+    height:50px;
+    width: 500px;
+}
+</style>
+
+<button onclick="alert('Dej si bacha.');" class="button"></button>
+
+<div id="message">maj to bejt cisl54231 nebo slov</div>
+
+
+<script>
+    var message_element = document.getElementById('message');
+console.log(message_element);
+console.log(typeof message_element);
+
+var message_cont = document.getElementById('message');
+console.log(message_cont.innerHTML);
+message_cont.innerHTML = 'New Text';
+console.log(message_cont.innerHTML);
+
+</script>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body {
+        /*padding top aby se neschovával obsah pod menu*/
+        margin: 0px;
+        padding-top: 2em; 
+    }
+    section {
+        width: 600px;
+        margin: 0 auto;
+    }
+    nav {
+                /*sticky navigation*/
+        background-color: darkred;
+        color: #ffffff;
+        padding: 0.5em;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    nav .links {
+        float:right;
+        margin-right: 1em;
+    }
+    nav .links > div {
+        display: inline-block;
+        margin: 0 0.5em;
+        position: relative;
+    }
+    nav .submenu {
+        position: absolute;
+        background-color: darkgrey;
+        color: #000000;
+        padding: 1em;
+        right: 0;
+        top: 100%;
+        display: none;
+    }
+    nav .links > div:hover .submenu {
+        display:block;
+    }
+</style>
+</head>
+
+<body>
+    <nav>
+        MENU
+        <div class="links">
+            <div><a href="#">Link #1</a></div>
+            <div><a href="#">Link #2</a>
+                <div class="submenu">
+                    <a href="#">Link #1</a>
+                    <a href="#">Link #2</a>
+                    <a href="#">Link #3</a>
+                    <a href="#">Link #4</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h1>my headline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit tenetur rerum totam et, minus consequuntur
+            at nobis pariatur eum libero velit natus, saepe sapiente id, tempora, voluptas magnam repellat!</p>
+    </section>
+</body>
+
+</html>
