@@ -1,0 +1,8 @@
+#topright {
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    right: 0;
+    top: 0;
+}
