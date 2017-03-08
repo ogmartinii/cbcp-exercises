@@ -1,0 +1,30 @@
+.info {
+    position: relative;
+}
+.game {
+    background-color: lightseagreen;
+    margin: auto;
+    overflow: hidden;
+    padding: 1em;
+    width: 960px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.game.image {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rating {
+    font-weight: bold;
+    font-size: 2em;
+    float: right;
+    position: absolute;
+    right: 27px;
+    top: -117px;
+}

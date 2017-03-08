@@ -1,0 +1,39 @@
+<?php
+SELECT `imdb_movie_has_genre`.* #select everything
+FROM `imdb_movie_has_genre` #from table imdb_movies_has_genres
+INNER JOIN `imdb_genre` # and join the data from the table imdb_genre
+    # where column imdb_genre_id in the first table matches
+    #column in in the second table
+    ON `imdb_movie_has_genre`,`imdb_genre_id` = `imdb_genre`.`id`
+WHERE `imdb_movie_id` = 71615;
+
+
+# simsonovi 96697
+
+SELECT *,
+FROM `imdb_movie`,
+INNER JOIN `imdb_movie_type`,
+    ON `imdb_movie`.`imdb_movie_type_id` = `imdb_movie_type`.`id`,
+INNER JOIN `imdb_certification`,
+    ON `imdb_movie`.`imdb_certification_id` = `imdb_certification`.`id`,
+WHERE `imdb_movie`.`imdb_id` = 96697;
+
+
+//selecting actors that play in movie
+34583
+
+SELECT *
+FROM `imdb_movie_has_person`
+INNER JOIN `imdb_person`
+    ON `imdb_movie_has_person`.`imdb_person_id` = `imdb_person`.`imdb_id`
+WHERE `imdb_movie_has_person`.`imdb_movie_id` = 34583;
+
+imdb has origin country / imdb country movie
+
+select all countries cassablanca is from
+
+SELECT `imdb_movie_origin_country`.*
+FROM `imdb_movie_has_origin_country`
+LEFT JOIN `imdb_movie_origin_country`
+    ON `imdb_movie_has_origin_country` . `imdb_movie_origin_country_id` = `imdb_movie_origin_country` . `id`
+WHERE `imdb_movie_has_origin_country` . `imdb_movie_id` = 34583;

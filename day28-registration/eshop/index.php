@@ -9,9 +9,9 @@ $products = $db->getproducts();
 
 if($_POST) {
     if(!isset($_SESSION['products'])){
-        $_SESSION['products'] = [];
+        $_SESSION['products'] = []; //nerozumim syntax
     }
-    $_SESSION ['products'][] = $_POST['id'];
+    $_SESSION ['products'][] = $_POST['id'];  //nejasný krok
     header('Location:index.php');
 }
 
@@ -21,6 +21,7 @@ if($_POST) {
 
 
 <?php
+var_dump($_SESSION);
 foreach ($products as $product) {
     echo 'Name:' . ' ' . htmlspecialchars($product['name']) . '<br>'; // htmlspecialchars aby nešlo heknout stránku (XSS attack)
     echo 'Price:' . ' ' . htmlspecialchars($product['price']) . 'Kč' . '<br>';
@@ -32,4 +33,5 @@ foreach ($products as $product) {
         . '</form><hr>';
     // var_dump($product);
 }
+    
 ?>

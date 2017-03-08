@@ -1,0 +1,44 @@
+<!--<script>
+    function hello() {
+       return "Hello World!";
+    }
+
+    console.log(hello());
+    console.log(hello);
+</script>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="menu">Menu</div>
+<div id="content">First Content</div>
+
+
+<script>
+    var element = document.getElementById('content'); // finds element by id, will be stored in element var.
+    element.innerHTML = "Javascript modified content"; // changes content of element.
+    element.style.color = "#0f0";
+    element.className = "id ont know";
+
+    var newElement = document.createElement('div');
+    document.getElementsByTagName('body')[0].appendChild(newElement); // add div at the end of file.
+</script>
+
+<button id="btn1" onclick="myFunction()">Click me!</button>
+<button id="btn2">Click me!</button>
+
+<script>
+    
+    function myFunction(){
+        alert('Nope');
+    }
+    document.getElementById('btn2').onclick = myFunction;
+</script>
+
+</body>
+</html>

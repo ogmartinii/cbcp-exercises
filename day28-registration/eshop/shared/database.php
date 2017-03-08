@@ -52,14 +52,14 @@ class Database
 
     public function getUser($id)
     {
-        $stmt = $this->db->prepare('SELECT id, name, email, password FROM users WHERE id = ?'); // vybereme položky z tabulky "products"
+        $stmt = $this->db->prepare('SELECT id, name, email, password FROM users WHERE id = ?'); // vybereme položky z tabulky "users"
         $stmt->execute([$id]);
         return $stmt->fetch();
     }
 
     public function getUserByEmail($email)
     {
-        $stmt = $this->db->prepare('SELECT id, name, email, password FROM users WHERE email = ?'); // vybereme položky z tabulky "products"
+        $stmt = $this->db->prepare('SELECT id, name, email, password FROM users WHERE email = ?'); // vybereme položky z tabulky "users"
         $stmt->execute([$email]);
         return $stmt->fetch();
     }
